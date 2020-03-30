@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>
+      Algorithm visualization
+    </title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="algoVisualization.css" rel="stylesheet" />
+    <h1>Algorithm Visualization</h1>
+  </head>
+  <body>
+    <section class="header">
+      <div class="input-text-block">
+        <label>Enter Size </label>
+
+        <input
+          type="text"
+          placeholder="Enter size"
+          class="input-text"
+          id="input-size"
+        />
+
+        <div class="input-section">
+          <label>Enter Number/String </label>
+
+          <!-- display-textbox is necessary to display error msg in span below display -->
+          <div class="display-textbox">
+            <input
+              type="text"
+              id="input-value"
+              class="input-text"
+              placeholder="enter and add one by one"
+            /><br />
+            <span id="error"></span>
+          </div>
+        </div>
+        <input
+          type="button"
+          value="Add Number"
+          class="button"
+          onclick="addNumberInArray()"
+        />
+        <input type="button" value="reset" class="button" onclick="reset()" />
+
+        <label>Enter search value</label>
+
+        <input
+          type="text"
+          id="input-search-value"
+          class="input-text"
+          placeholder=" Enter search value"
+          disabled
+        />
+      </div>
+
+      <div class="algo-button-section">
+        <input
+          type="button"
+          value="Bubble Sort"
+          class="button"
+          onclick="bubbleSort()"
+        />
+        <input
+          type="button"
+          value="Insertion Sort"
+          class="button"
+          onclick="insertionSort()"
+        />
+
+        <input
+          type="button"
+          value="Selection Sort"
+          class="button"
+          onclick="selectionSort()"
+        />
+        <input
+          type="button"
+          value="Linear Search"
+          class="button"
+          onclick="linearSearch()"
+        />
+        <input
+          type="button"
+          value="Binary Search"
+          class="button"
+          onclick="binarySearch()"
+        />
+      </div>
+    </section>
+
+    <section class="algo-animation-container1">
+      <label id="display-values" class="display-values"></label><br /><br />
+      <label id="display-sorting-status" class="display-values"></label>
+
+      <section class="algo-animation-container"></section>
+    </section>
+    <section id="footer"></section>
+  </body>
+  <script src="index.js"></script>
+  <script src="BubbleSort.js"></script>
+  <script src="linearSearch.js"></script>
+  <script src="search.js"></script>
+  <script src="binarySearch.js"></script>
+  <script src="selectionSort.js"></script>
+  <!-- <script src="quickSort.js"></script> -->
+  <script src="insertionSort.js"></script>
+</html>
