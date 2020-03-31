@@ -19,13 +19,14 @@
           placeholder="Enter size"
           class="input-text"
           id="input-size"
+          onchange="generateBlocks()"
         />
 
         <div class="input-section">
-          <label>Enter Number/String </label>
+          <!--<label>Enter Number/String </label> -->
 
           <!-- display-textbox is necessary to display error msg in span below display -->
-          <div class="display-textbox">
+          <!-- <div class="display-textbox">
             <input
               type="text"
               id="input-value"
@@ -33,15 +34,14 @@
               placeholder="enter and add one by one"
             /><br />
             <span id="error"></span>
-          </div>
+          </div> -->
         </div>
-        <input
+        <!-- <input
           type="button"
           value="Add Number"
           class="button"
           onclick="addNumberInArray()"
-        />
-        <input type="button" value="reset" class="button" onclick="reset()" />
+        /> -->
 
         <label>Enter search value</label>
 
@@ -52,6 +52,7 @@
           placeholder=" Enter search value"
           disabled
         />
+        <input type="button" value="reset" class="button" onclick="reset()" />
       </div>
 
       <div class="algo-button-section">

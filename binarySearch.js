@@ -7,12 +7,12 @@ function foundValue(val, search) {
     const searchval = searchValStyle.getPropertyValue("border");
 
     val.style.backgroundColor = "yellow";
-    search.style.border = "4px solid #13CE66";
+    search.style.border = "4px solid yellow";
 
     window.requestAnimationFrame(() => {
       setInterval(() => {
         resolve();
-      }, 500);
+      }, 250);
     });
   });
 }
@@ -26,7 +26,7 @@ async function binarySearch() {
   let searchValue = searchContainer[0].childNodes[0].innerHTML;
 
   let lowIndex = 0;
-  let highIndex = blocks.length - 1;
+  let highIndex = blocks.length;
   let midIndex;
   while (lowIndex <= highIndex) {
     midIndex = Math.floor((lowIndex + highIndex) / 2);
@@ -38,13 +38,13 @@ async function binarySearch() {
         resolve();
       }, 100);
     });
-    let value1 = blocks[lowIndex].childNodes[0].innerHTML;
+    let value1 = blocks[midIndex].childNodes[0].innerHTML;
     if (!isNaN(value1)) {
       value1 = Number(value1);
       searchValue = Number(searchValue);
     }
     if (value1 == searchValue)
-      return await foundValue(blocks[lowIndex], searchContainer[0]);
+      return await foundValue(blocks[midIndex], searchContainer[0]);
     else if (value1 > searchValue) {
       blocks[lowIndex].style.backgroundColor = "#58B7FF";
       highIndex = midIndex - 1;
