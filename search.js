@@ -1,5 +1,3 @@
-console.log("welcome to linear ");
-
 var count = 0; // record times of press searching button if more than one not allowed to create again search box animation
 
 function search() {

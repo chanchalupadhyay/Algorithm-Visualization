@@ -50,5 +50,6 @@ async function binarySearch() {
       highIndex = midIndex - 1;
     } else lowIndex = midIndex + 1;
   }
+
   return null;
 }

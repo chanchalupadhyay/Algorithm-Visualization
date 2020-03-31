@@ -1,45 +1,11 @@
 let inputDataArray = [];
 const algoContainer = document.querySelector(".algo-animation-container");
 
-// function addNumberInArray() {
-//   document.getElementById("error").innerHTML = "";
-
-//   let input = document.getElementById("input-value").value;
-//   let len = inputDataArray.length;
-//   var size = parseInt(document.getElementById("input-size").value);
-
-//   // check input is empty
-//   if (!input) document.getElementById("error").innerHTML = "Enter Any Value";
-
-//   if (len < size && input) {
-//     //check and convert string into number
-//     if (!isNaN(input)) {
-//       input = parseInt(input);
-//     }
-
-//     inputDataArray.push(input);
-
-//     document.getElementById("display-values").textContent += input + " ";
-//     document.getElementById("input-value").value = "";
-//   } else if (len >= size)
-//     document.getElementById("error").innerHTML = "Out of Size";
-
-//   if (size - 1 == len) {
-//     document.getElementById("input-search-value").disabled = false;
-
-//     generateBlocks();
-//   }
-// }
-
 //  for generate Blocks
 function generateBlocks() {
-  // let len = inputDataArray.length;
-  // console.log("ll=" + inputDataArray);
-  // let identifyInput;
   let len = Number(document.getElementById("input-size").value);
   let value;
   for (let i = 0; i < len; i++) {
-    // value = inputDataArray[i];
     value = Math.floor(Math.random() * 100);
     const block = document.createElement("div");
     block.classList.add("block");
