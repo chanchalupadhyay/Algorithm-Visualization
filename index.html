@@ -15,33 +15,12 @@
         <label>Enter Size </label>
 
         <input
-          type="text"
+          type="number"
           placeholder="Enter size"
           class="input-text"
           id="input-size"
           onchange="generateBlocks()"
         />
-
-        <div class="input-section">
-          <!--<label>Enter Number/String </label> -->
-
-          <!-- display-textbox is necessary to display error msg in span below display -->
-          <!-- <div class="display-textbox">
-            <input
-              type="text"
-              id="input-value"
-              class="input-text"
-              placeholder="enter and add one by one"
-            /><br />
-            <span id="error"></span>
-          </div> -->
-        </div>
-        <!-- <input
-          type="button"
-          value="Add Number"
-          class="button"
-          onclick="addNumberInArray()"
-        /> -->
 
         <label>Enter search value</label>
 
@@ -85,6 +64,7 @@
           type="button"
           value="Binary Search"
           class="button"
+          id="binary-search"
           onclick="binarySearch()"
         />
       </div>
@@ -98,6 +78,7 @@
     </section>
     <section id="footer"></section>
   </body>
+
   <script src="index.js"></script>
   <script src="BubbleSort.js"></script>
   <script src="linearSearch.js"></script>

@@ -8,64 +8,36 @@ h1 {
 .header {
   background-color: grey;
   color: white;
-  /* padding: 2em; */
-  /* position: relative; */
+
   max-width: 98%;
 }
 
 /* 1st row in  header */
 .input-text-block {
-  display: inline-block;
-  border: 1px solid white;
   margin: auto;
-  width: 100%;
-  padding-left: 6.5em;
-  /* padding-right: 1.5em; */
-  position: relative;
+  max-width: 50%;
+  padding: 0.7em;
+  padding-right: 1.5em;
 }
 
 .input-text {
-  /* display: block; */
   padding: 0.5em;
   border-radius: 0.6em;
 }
-.input-section {
-  display: inline-block;
-  /* border: 1px solid white; */
-  margin: 2em;
-  padding: 0.4em;
-  /* width: 25%; */
-  position: relative;
-  /* padding-left: 1em; */
-}
 
 #error {
-  /* border: 1px solid blue; */
   color: rgb(126, 2, 2);
 }
-/* .display-textbox {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  margin-left: 0.7em;
-   border: 1px solid green; 
-} */
-/* 1st row in header end */
 
-/* 2nd row starts-algo buttons */
 .algo-button-section {
-  /* border: 1px solid white; */
-  display: block;
-  /* position: absolute; */
-  /* top: 32; */
-  width: 100%;
+  width: 50%;
+  margin: auto;
   padding: 1em;
 }
 .button {
   padding: 0.5em;
   border: 1px solid grey;
 
-  /* display: inline-block; */
   color: rgb(31, 30, 30);
   margin-right: 3.5%;
   background-color: honeydew;
@@ -75,10 +47,6 @@ h1 {
 /* header end */
 
 .algo-animation-container1 {
-  /* width: 600;
-  height: 420px;
-  position: relative;
-  margin: 0; */
   width: 800px;
   height: 384px;
   position: relative;
