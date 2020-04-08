@@ -8,7 +8,6 @@ function generateBlocks() {
   let value;
   for (let i = 0; i < len; i++) {
     value = Math.floor(Math.random() * 100);
-
     const block = document.createElement("div");
     block.classList.add("block");
     block.style.height = `${value * 1}px`;

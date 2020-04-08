@@ -18,10 +18,10 @@ function foundValue(val, search) {
 }
 
 async function binarySearch() {
-  let blocks = document.querySelectorAll(".block");
   await bubbleSort();
   search();
 
+  let blocks = document.querySelectorAll(".block");
   let searchContainer = document.querySelectorAll(".searchBox");
   let searchValue = searchContainer[0].childNodes[0].innerHTML;
 
