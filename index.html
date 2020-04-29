@@ -16,10 +16,15 @@
 
         <input
           type="number"
-          placeholder="Enter size"
+          placeholder="Enter size ,by default=10"
           class="input-text"
           id="input-size"
-          onchange="generateBlocks()"
+        />
+        <input
+          type="button"
+          value="Generate Blocks"
+          class="button"
+          onclick="generateBlocks()"
         />
 
         <label>Enter search value</label>
@@ -39,33 +44,37 @@
           type="button"
           value="Bubble Sort"
           class="button"
-          onclick="bubbleSort()"
-        />
-        <input
-          type="button"
-          value="Insertion Sort"
-          class="button"
-          onclick="insertionSort()"
+          id="bubbleSort"
+          onclick="algorithmn(this.id)"
         />
 
         <input
           type="button"
           value="Selection Sort"
           class="button"
-          onclick="selectionSort()"
+          id="selectionSort"
+          onclick="algorithmn(this.id)"
+        />
+        <input
+          type="button"
+          value="Insertion Sort"
+          class="button"
+          id="insertionSort"
+          onclick="algorithmn(this.id)"
         />
         <input
           type="button"
           value="Linear Search"
           class="button"
-          onclick="linearSearch()"
+          id="linearSearch"
+          onclick="algorithmn(this.id)"
         />
         <input
           type="button"
           value="Binary Search"
           class="button"
-          id="binary-search"
-          onclick="binarySearch()"
+          id="binarySearch"
+          onclick="algorithmn(this.id)"
         />
       </div>
     </section>
@@ -80,10 +89,11 @@
   </body>
 
   <script src="index.js"></script>
-  <script src="BubbleSort.js"></script>
-  <script src="linearSearch.js"></script>
+  <!-- <script src="BubbleSort.js"></script> -->
+  <!-- <script src="linearSearch.js"></script> -->
   <script src="search.js"></script>
-  <script src="binarySearch.js"></script>
-  <script src="selectionSort.js"></script>
-  <script src="insertionSort.js"></script>
+  <!-- <script src="binarySearch.js"></script> -->
+  <!-- <script src="selectionSort.js"></script>
+  <script src="insertionSort.js"></script> -->
+  <!-- <script src="test.js"></script> -->
 </html>
